@@ -9,4 +9,3 @@ Try:
 - Creating a pull request with main as `base`
   - ESLint will check the code to merge into main
   - Remark will check the MD about to be merged into main
-- Push to `error` branch
