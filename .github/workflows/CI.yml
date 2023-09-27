@@ -2,14 +2,23 @@ name: Testing during CI
 
 on:
   pull_request:
-    types: opened
+    types: [opened, synchronize]
     branches: main
 
 jobs:
-  lint:
+  eslint:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
       - run: npm install
       - run: npm run lint
+
+  remark-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm install
+      - run: |
+          npm install remark-cli remark-preset-lint-consistent
+          npx remark . --use remark-preset-lint-consistent --frail
