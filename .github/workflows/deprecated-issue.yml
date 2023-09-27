@@ -1,0 +1,17 @@
+name: Remove unactive issue
+
+on:
+  schedule:
+    - cron: "0 1 * * *"
+
+jobs:
+  remove-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v5
+        with:
+          days-before-issue-stale: 0
+          days-before-close: 1
+          stale-issue-message: This issue is now marked as stale due to inactivity
+          close-issue-message: This issue got closed due to inavtivity
+          repo-token: ${{secrets.GITHUB_TOKEN}}
