@@ -1,0 +1,14 @@
+name: Testing during CI
+
+on:
+  pull_request:
+    types: opened
+    branches: main
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm run lint

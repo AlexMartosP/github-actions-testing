@@ -1,0 +1,23 @@
+{
+  "name": "github-actions-testing",
+  "description": "I created this repository to try out Github actions after going through some courses in [Github skills](https://skills.github.com/).",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexMartosP/github-actions-testing.git"
+  },
+  "author": "Alexander Martos Paschoal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexMartosP/github-actions-testing/issues"
+  },
+  "homepage": "https://github.com/AlexMartosP/github-actions-testing#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^8.50.0"
+  }
+}
