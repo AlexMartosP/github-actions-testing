@@ -3,8 +3,13 @@ name: Remove unactive issue
 on:
   schedule:
     - cron: "0 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  issues: write
 
 jobs:
+
   remove-issue:
     runs-on: ubuntu-latest
     steps:
