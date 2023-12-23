@@ -7,5 +7,6 @@ console.log("Sixth");
 
 function test() {
   console.log("hello");
+  console.log("again");
 }
 test();
