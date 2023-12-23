@@ -1,6 +1,6 @@
 # Github actions testing
 
-I created this repository to try out Github actions after going through some courses in [Github skills](https://skills.github.com/).
+I created this _repository_ to try out Github actions after going through some courses in [Github skills](https://skills.github.com/).
 
 Try:
 
